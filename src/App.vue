@@ -1,7 +1,11 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <div class="text-2xl font-bold font-nunito text-gray-500 p-3 ml-3 flex flex-col items-start">
+      <router-link to="/">
+        Exercise 3
+      </router-link>
+      <div class="border-2 px-20 shadow-lg border-indigo-200"></div>
+    </div>
   </div>
   <router-view/>
 </template>
@@ -18,13 +22,5 @@
 #nav {
   padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
